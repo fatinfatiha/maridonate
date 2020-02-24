@@ -1,51 +1,43 @@
-@extends('admin.layouts.auth')
+@extends('layouts.master')
 
 @section('content')
 
-<div class="login-background">
-  <p class="login-box-msg">User</p>
-
-  <form action="{{ url('/login') }}" method="post">
-      {!! csrf_field() !!}
-
-      <div class="form-group has-feedback{{ $errors->has('email') ? ' has-error' : '' }}">
-          <input type="email" name="email" class="form-control" placeholder="Email" value="{{ old('email') }}">
-          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-
-          @if ($errors->has('email'))
-              <span class="help-block">
-                  <strong>{{ $errors->first('email') }}</strong>
-              </span>
-          @endif
-      </div>
-      <div class="form-group has-feedback{{ $errors->has('password') ? ' has-error' : '' }}">
-          <input type="password" name="password" class="form-control" placeholder="Password">
-          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-
-          @if ($errors->has('password'))
-              <span class="help-block">
-                  <strong>{{ $errors->first('password') }}</strong>
-              </span>
-          @endif
-      </div>
-      <div class="row">
-          <div class="col-xs-8">
-              <div class="checkbox icheck">
-                  <label>
-                      <input type="checkbox" name="remember"> Remember Me
-                  </label>
-              </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-          </div>
-          <!-- /.col -->
-      </div>
-  </form>
-
-  <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
-  <a href="{{ url('/register') }}">Register a new membership</a>
-</div>
+<form method="POST" action="apply" class="form-horizontal custm-form" role="form">
+{!! csrf_field() !!}
+    <div class="modal-header">
+    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>-->
+        <h4 class="modal-title">Apply Online</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="control-label col-md-3">Name:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">E-mail:</label>
+            <div class="col-md-8">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" name="resume">Attach Resume:</label>
+            <div class="col-md-8">
+                <input  type="file" id="resume" placeholder="Resume" name="resume" class=""/>
+                <span class="required" id='spnFileError'></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="col-xs-5">
+            <p style="margin:0;text-align:left;color: green;display:none;" id="successMsg">Submitted Successfully!</p>
+        </div>
+        <button type="submit" id="btnUpload" class="custm-btn btn-primary" onclick="uploadFile();">Submit</button>
+        <button type="button" class="custm-btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</form>
 
 @endsection

@@ -12,7 +12,8 @@
         "bosnadev/repositories": "0.*",
         "barryvdh/laravel-debugbar": "^2.2",
         "barryvdh/laravel-ide-helper": "^2.1",
-        "intervention/image": "^2.3"
+        "intervention/image": "^2.3",
+        "paypal/rest-api-sdk-php": "^1.14"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -45,9 +46,10 @@
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+
+        "post-install-cmd": [
+            "chmod -R 755 bootstrap\/cache",
+            "php artisan cache:clear"
         ]
     },
     "config": {

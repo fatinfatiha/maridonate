@@ -27,7 +27,11 @@
 
 -----------------------------------------------------------------------------------*/
 
+/* DONATE PAGE */
 
+.donate-section {
+  padding: 210px 0;
+}
 /*-------- 2. Home page one -----*/
 
 
@@ -330,11 +334,12 @@
     content: "";
     height: 1px;
     position: absolute;
-    right: 66px;
+    right: 190px;
     width: 130px;
 }
 .icon-img::before {
-    left: 66px;
+    /* left: 66px; */
+    left: 185px;
 }
 /* services */
 
@@ -349,7 +354,7 @@
 }
 .single-service i {
     /* color: #777; */
-    color: #337ab7;
+    /* color: #337ab7; */
     font-size: 36px;
     width: 100%;
 }
@@ -381,6 +386,14 @@
     font-size: 13px;
     font-weight: bold;
 }
+
+.doller-target > h3{
+  color: #333;
+  font-family: open sans;
+  font-size: 22px;
+  font-weight: 500;
+}
+
 .doller-target > h4 span {
     color: #555555;
 }
@@ -394,8 +407,12 @@
     box-shadow: 0 3px 5px rgba(85, 85, 85, 0.25);
 }
 .causes-info {
-    box-shadow: 0 3px 5px rgba(85, 85, 85, 0.2);
-    padding: 30px 35px;
+    box-shadow: 0 6px 15px rgb(85, 85, 85);
+    /* padding: 30px 35px; */
+    padding: 30px 35px 20px 35px;
+    border-radius: 4px;
+    background: #fff;
+    height: 265px;
 }
 .causes-meta {
     margin: 21px 0 16px;
@@ -1144,6 +1161,7 @@ h2.counter {
 .single-grow > h3 {
     font-size: 24px;
     margin-bottom: 15px;
+    box-shadow: 0 6px 15px rgb(85, 85, 85);
 }
 .single-grow {
     padding-right: 40px;

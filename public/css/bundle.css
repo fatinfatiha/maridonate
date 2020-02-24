@@ -35,10 +35,10 @@ a,
     transition: all 0.3s ease-out 0s;
 }
 .btn {
-    border-radius: 0px;
+    border-radius: 4px;
     font-size: 14px;
     padding: 0px 15px;
-    height: 30px;
+    /* height: 30px; */
     line-height: 30px;
 }
 a:focus,
@@ -670,7 +670,7 @@ textarea:focus {
 .mb-60 { margin-bottom: 60px }
 .mb-65 { margin-bottom: 65px }
 .mb-70 { margin-bottom: 70px }
-.mb-75 { margin-bottom: 75px }
+.mb-75 { margin-bottom: 35px }
 .mb-80 { margin-bottom: 80px }
 .mb-90 { margin-bottom: 90px }
 .mb-100 { margin-bottom: 100px }
@@ -889,11 +889,11 @@ textarea:focus {
 /*colored background*/
  .white-bg { background: #fff; }
  .black-light-bg { background: #3e3e3e }
- .black-bg { background: #2e2e2e }
+ .black-bg { background: #000000 }
  .gray-bg { background: #f8f8f8; }
  .theme-bg {
    /* background: #f8b864; */
-   background: #31708f;
+   /* background: #31708f; */
   }
  .transparent-bg { background: transparent; }
 

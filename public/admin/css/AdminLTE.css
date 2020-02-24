@@ -3263,7 +3263,7 @@ background: url(https://upload.wikimedia.org/wikipedia/commons/3/34/White_Mounta
 } */
 .login-box,
 .register-box {
-  width: 360px;
+  width: 350px;
   margin: 7% auto;
 }
 @media (max-width: 768px) {

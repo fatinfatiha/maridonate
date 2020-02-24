@@ -47,11 +47,11 @@
                               </div>
 
                               <div class="form-group{{ $errors->has('image_name') ? ' has-error' : '' }}">
-                                  <label for="image_name" class="col-md-4 control-label">Image</label>
+                                  <label for="image_name" class="col-md-4 control-label">Supported Document</label>
 
                                   <div class="col-md-6">
-                                      <input id="image_name" type="file" name="image_name" value="{{ old('image_name') }}" accept="image/*">
-                                      <p class="help-block">668x445 pixels</p>
+                                      <input id="image_name" type="file" name="image_name" value="{{ old('image_name') }}" accept="pdf/*" required>
+                                      <p class="help-block">PDF only</p>
 
                                       @if ($errors->has('image_name'))
                                           <span class="help-block">

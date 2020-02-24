@@ -6,7 +6,7 @@
                     <div class="footer-weiget">
                         <h3 class="weiget-title">ABOUT US</h3>
                         <div class="weiget-info">
-                            <p>There are many variations of passages ofbr  Lorem Ipsum available, but the There are many variations of passages </p>
+                            <p>We build this platform because we know that <br>charity sees the need, not the cause. We can’t help everyone, but everyone can help someone with MARiDONATE. </p>
                             <div class="footer-social">
                                 <ul>
                                     <!-- <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -27,10 +27,11 @@
                         <h3 class="weiget-title">IMPORTANT INFO</h3>
                         <div class="weiget-info">
                             <ul>
+                              <li><a href="#">Home</a></li>
                                 <li><a href="#">About Us</a></li>
-                                <li><a href="#">Annual Reports</a></li>
-                                <li><a href="#">Our Approch</a></li>
-                                <li><a href="#">Statistics</a></li>
+                                <li><a href="#">Campaigns</a></li>
+                                <li><a href="#">Start Campaign</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -41,9 +42,9 @@
                         <div class="weiget-info">
                             <ul>
                                 <li><a href="#">Donate</a></li>
-                                <li><a href="#">Media Resurces</a></li>
-                                <li><a href="#">Quick Contact</a></li>
-                                <li><a href="#">Address</a></li>
+                                <li><a href="#">Mission</a></li>
+                                <li><a href="#">Vission</a></li>
+                                <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

@@ -26,13 +26,14 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition login-page" style="background: url(https://upload.wikimedia.org/wikipedia/commons/3/34/White_Mountains_sunset_from_Pine_Creek_notch.jpg)">
+<body class="hold-transition login-page" style="background: url(https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size:cover;">
 <div class="login-box">
-    <div class="login-logo">
-        <a href="{{ url('backend/login') }}"><b>MARiDONATE</b> Login</a>
-    </div>
+
     <!-- /.login-logo -->
     <div class="login-box-body">
+      <div class="login-logo">
+          <a href="{{ url('backend/login') }}"><b>MARiDONATE</b> Login</a>
+      </div>
         @yield('content')
     </div>
     <!-- /.login-box-body -->

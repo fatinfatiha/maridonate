@@ -12,9 +12,18 @@
             </button>
 
             <!-- Branding Image -->
+            @if (Auth::guest())
             <a class="navbar-brand navbar-font-brand nav-lineheight-1" href="{{ url('/') }}">
                 MARiDONATE
             </a>
+            @else
+            <a class="navbar-brand navbar-font-brand nav-lineheight-3" href="{{ url('/') }}">
+                MARiDONATE
+            </a> &nbsp
+              <a href="{{ url('/start-a-campaign') }}" class="navbar-font navbar-lineheight-5">Start a campaign</a> &nbsp
+              <a href="{{ url('/campaigns') }}" class="navbar-font navbar-lineheight-5">Campaigns</a>
+
+            @endif
         </div>
 
         <div class="collapse navbar-collapse nav-lineheight-2" id="app-navbar-collapse">
@@ -34,11 +43,14 @@
                 @else
 
                 <div class="dropdown nav-lineheight-3">
+
+
                   <a href="#" role="button" class="dropdown-toggle navbar-font" data-toggle="dropdown">{{ Auth::user()->first_name . ' ' . Auth::user()->last_name }} <b class="caret"></b></a>
                   <ul class="dropdown-menu dropdown-font" role="menu">
                       <!-- <li><a href="{{ url('/start-a-campaign') }}" class="navbar-font">Start a campaign</a></li>
                       <li><a href="{{ url('/logout') }}" class=" navbar-font"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li> -->
-                      <li><a href="{{ url('/start-a-campaign') }}" class="navbar-font">Start a campaign</a></li>
+                      <!-- <li><a href="{{ url('/start-a-campaign') }}" class="navbar-font">Start a campaign</a></li> -->
+                      <li><a href="{{ url('/user-profile') }}" class="navbar-font"><i class="fas fa-user"></i> Profile</a></li>
                       <li><a href="{{ url('/logout') }}" class="navbar-font"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                   </ul>
                 </div>

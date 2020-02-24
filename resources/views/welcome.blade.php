@@ -15,6 +15,7 @@
     </div>
   </div>
 </div> -->
+
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
   <!-- Overlay -->
   <div class="overlay"></div>
@@ -33,7 +34,7 @@
       <div class="hero">
         <hgroup>
             <h1>MARiDONATE</h1>
-            <h3>Get start your next awesome project</h3>
+            <h3 style="text-shadow: 0 0 4px #fbf9f9;">Crowdfunding Platform for Fundraisers in UiTM Jasin</h3>
         </hgroup>
         <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
       </div>
@@ -42,8 +43,8 @@
       <div class="slide-2"></div>
       <div class="hero">
         <hgroup>
-            <h1>We are smart</h1>
-            <h3>Get start your next awesome project</h3>
+            <h1>Give today</h1>
+            <!-- <h3 style="text-shadow: 0 0 4px #fbf9f9;">Get start your next awesome project</h3> -->
         </hgroup>
         <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
       </div>
@@ -52,8 +53,8 @@
       <div class="slide-3"></div>
       <div class="hero">
         <hgroup>
-            <h1>We are amazing</h1>
-            <h3>Get start your next awesome project</h3>
+            <h1>make tomorrow better.</h1>
+            <!-- <h3 style="text-shadow: 0 0 4px #fbf9f9;">Get start your next awesome project</h3> -->
         </hgroup>
         <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
       </div>
@@ -147,19 +148,20 @@
 
         <!-- slider end -->
         <!-- services start -->
+
         <div class="container" style="position:relative">
           <div class="services-area content-section">
-              <div class="container">
+              <div class="fixed-width">
                   <div class="all-single-service white-bg pt-120 pb-90">
                       <div class="row">
                           <div class="col-md-12">
                               <div class="section-title text-center mb-75">
-                                  <h2>Our Goal</h2>
+                                  <h2 style="text-shadow: 0 0 4px #555;"><b>MARiDONATE Goal</b></h2>
                                   <div class="icon-img">
                                       <!-- <img src="images/img/icon-img/1.png" alt=""> -->
                                       <i class="fas fa-hands-helping fa-3x"></i>
                                   </div>
-                                  <p>There are many variations of azer duskam of Lorem Ipsum available,</p>
+                                  <p>We build this platform because we know that charity sees the need, not the cause.</p>
                               </div>
                           </div>
                       </div>
@@ -167,22 +169,22 @@
                           <div class="col-md-4 col-sm-4 text-center mb-30">
                               <div class="single-service">
                                   <i class="far fa-smile"></i>
-                                  <h3>Save Childrean </h3>
-                                  <p>There are many variations of passages of Lorem Ipsum available,</p>
+                                  <h3>Happiness </h3>
+                                  <p>A small charity has a big impact. An effort made for the happiness of others lifes us above ourselves.</p>
                               </div>
                           </div>
                           <div class="col-md-4 col-sm-4 text-center mb-30">
                               <div class="single-service">
                                   <i class="far fa-user"></i>
                                   <h3>People Care</h3>
-                                  <p>There are many variations of passages of Lorem Ipsum available,</p>
+                                  <p>Be a part of the breakthrough and make someone’s dream come true. Be part of a change in the world.</p>
                               </div>
                           </div>
                           <div class="col-md-4 col-sm-4 text-center mb-30">
                               <div class="single-service">
                                   <i class="fas fa-globe-europe"></i>
-                                  <h3>Peace The Planet</h3>
-                                  <p>There are many variations of passages of Lorem Ipsum available,</p>
+                                  <h3>Help People</h3>
+                                  <p>Doing nothing for others is the undoing of ourselves. Donation shows appreciation.</p>
                               </div>
                           </div>
                       </div>
@@ -197,12 +199,12 @@
               <div class="row">
                   <div class="col-md-12">
                       <div class="section-title text-center mb-75">
-                          <h2>Latest Campaigns</h2>
+                          <h2 style="text-shadow: 0 0 4px #555;"><b>MARiDONATE Latest Campaigns</b></h2>
                           <div class="icon-img">
                               <!-- <img src="images/img/icon-img/1.png" alt=""> -->
                               <i class="fas fa-hands-helping fa-3x"></i>
                           </div>
-                          <p>There are many variations of azer duskam of Lorem Ipsum available,</p>
+                          <p>We can’t help everyone, but everyone can help someone with MARiDONATE.</p>
                       </div>
                   </div>
               </div>
@@ -210,23 +212,46 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="thumbnail campaign-box">
-                    <img src="/uploads/{{$latest->image_name}}" class="img-thumbnail" alt="Cinque Terre">
+                    <!-- <embed src="files/{{$latest->image_name}}" type="application/pdf" width="100%" height="150px" /> -->
+                    <!-- <img src="/uploads/{{$latest->image_name}}" class="img-thumbnail" alt="Cinque Terre"> -->
                     <div class="single-causes mb-30">
-                        <a href="#"><img src="assets/img/causes/1.jpg" alt="" /></a>
-                        <div class="causes-info">
-                            <h3><a href="#">{{$latest->title}}</a></h3>
-                            <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p> -->
-                            <div class="causes-meta">
-                                <div class="doller-target f-left">
-                                    <h4>Fill Up : <span>$25,000</span></h4>
-                                </div>
-                                <div class="doller-target f-right">
-                                    <h4>Target : <span>$30,000</span></h4>
-                                </div>
-                            </div>
-                            <a class="button theme-bg" href="#">View Details</a>
+                      <a href="#"><img src="assets/img/causes/1.jpg" alt="" /></a>
+                      <div class="causes-info">
+                        <!-- <h3><a href="#">Children Case</a></h3> -->
+                        <h3><a href="#" style="text-transform:capitalize;">{{$latest->title}}</a></h3>
+                        <!-- <p>{{$latest->story}}</p> -->
+                        <div class="row">
+                          <div class="col-md-8 doller-target">
+                            <h4>Fund Raised : <span>MYR {{$latest->fundRaised}}</span></h4>
+                          </div>
                         </div>
+                        <div class="row">
+                          <div class="col-md-8 doller-target">
+                            <h4>Fund Needed : <span>MYR {{$latest->goal_price}}</span></h4>
+                          </div>
+                        </div>
+                        <!-- <div class="causes-meta">
+                        <div class="doller-target f-left">
+                        <h4>Fund Raised : <span>MYR {{$latest->fundRaised}}</span></h4>
+                      </div>
+                      <div class="doller-target f-right">
+                      <h4>Fund Needed : <span>MYR {{$latest->goal_price}}</span></h4>
                     </div>
+                  </div> -->
+                  <form class="causes-meta" action="{{url('/campaign-details')}}" method="post">
+                    <!-- <a class="button theme-bg" href="{{url('/campaign-details')}}">View Details
+                    <input type="hidden" name="campaignID" value="{{$latest->app_camp_id}}">
+                  </a> -->
+
+                  <form class="" action="{{url('/campaign-details')}}" method="post">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="campaignID" value="{{$latest->app_camp_id}}">
+                    <button type="submit" name="button" class="theme-bg btn btn-primary pull-right">View Details</button>
+                  </form>
+                </form>
+
+              </div>
+            </div>
                   </div>
                 </div
               </div>
@@ -237,7 +262,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-md-push-4 text-center">
-          <a class="button theme-bg" href="/campaigns">Load More</a>
+          <a class="button theme-bg" href="/campaigns" style="background: #3074ae;">Load More</a>
         </div>
       </div>
 

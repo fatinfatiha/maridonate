@@ -16,7 +16,7 @@
 <section class="content">
   <div class="container table-admin">
     <table class="table table-bordered user-table">
-      <tr id="user-table-top">
+      <tr id="user-table-top" style="border-bottom: 2px solid;">
          <th>
             <h4><b>Funding Purpose</b></h4>
          </th>
@@ -33,10 +33,16 @@
             <h4><b>Created By</b></h3>
          </th>
          <th>
+            <h4><b>Email</b></h3>
+         </th
+         <th>
             <h4><b>Datetime</b></h3>
          </th>
          <th>
-            <h4><b>Approve</b></h3>
+            <h4><b>Edit</b></h3>
+         </th>
+         <th>
+            <h4><b>Accept</b></h3>
          </th>
          <th>
             <h4><b>Deny</b></h3>
@@ -60,13 +66,25 @@
             <h5>{{$campaignData->first_name}} {{$campaignData->last_name}}</h5>
          </th>
          <th>
+            <h5>{{$campaignData->email}}</h5>
+         </th>
+         <th>
             <h5>{{$campaignData->created_at}}</h5>
          </th>
          <!-- <th><button><i class="fa fa-edit"></i></button></th> -->
          <th>
-           <form class="" action="{{url('/backend/approve-campaign')}}" method="post">
+           <form class="" action="{{url('/backend/edit-campaign')}}" method="post">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-             <button type="submit" name="button" class="btn btn-success"><input type="hidden" name="app_campaign" value="{{$campaignData->id}}"><i class="fas fa-vote-yea"></i></button>
+             <button type="submit" name="button" class="btn btn-primary"><input type="hidden" name="edit_campaign" value="{{$campaignData->id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+           </form>
+         </th>
+         <th style="text-align:center;">
+           <form class="" action="{{url('/backend/approve-campaign')}}" method="post">
+               <!-- {!! csrf_field() !!} -->
+               <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+               <button type="submit" name="button" class="btn btn-success"><input type="hidden" name="app_campaign" value="{{$campaignData->id}}"><i class="fa fa-check-square-o" aria-hidden="true"></i></button>
+
            </form>
          </th>
          <th>
@@ -74,7 +92,7 @@
                <!-- {!! csrf_field() !!} -->
                <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-               <button type="submit" name="button" class="btn btn-danger"><input type="hidden" name="del_campaign" value="{{$campaignData->id}}"><i class="fas fa-trash-alt"></i></button>
+               <button type="submit" name="button" class="btn btn-danger"><input type="hidden" name="del_campaign" value="{{$campaignData->id}}"><i class="fa fa-ban" aria-hidden="true"></i></button>
 
            </form>
          </th>
